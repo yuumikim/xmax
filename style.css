@@ -1,0 +1,464 @@
+@charset "uft-8";
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@media all {
+  header {
+    font-family: "Pretendard-Regular";
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .headerw {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .headerw > nav >img {
+    display: none;
+  }
+  .headerw > nav > ul {
+    display: flex;
+    justify-content: center;
+  }
+  .headerw > nav > ul > li {
+    padding-left: 3rem;
+  }
+  /* *******main**************************************8 */
+  .mainvisual {
+    background-image: url(../image/main-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+  }
+  .mainw {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  .mainw > p {
+    font-size: 8rem;
+    text-align: right;
+    color: #fff;
+  }
+  .mainw > p > span {
+    width: 60%;
+    height: 10px;
+    background-color: rgb(222, 192, 0);
+    display: inline-block;
+  }
+  /* ************intro******************* */
+  .introw {
+    font-family: "GmarketSansMedium";
+    width: 60%;
+    margin: 6rem auto;
+    color: rgb(67, 81, 145);
+  }
+  .introw > p {
+    text-align: center;
+    font-size: 2rem;
+    padding: 60px 0 30px;
+  }
+  .introbar {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(67, 81, 145);
+  }
+  .introw > ul {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .introw > ul img {
+    width: 18rem;
+    padding: 20px 0;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .introw > ul p {
+    width: 18rem;
+  }
+
+  /* ************teacher******************************* */
+  .teacher {
+    font-family: "GmarketSansMedium";
+    background-color: rgb(221, 251, 255);
+    padding-bottom: 150px;
+  }
+  .teacherw {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .teacherw > .title {
+    padding: 50px 0;
+  }
+  .teacherw > .title > p {
+    font-size: 6rem;
+    font-weight: bold;
+    color: rgb(64, 86, 129);
+  }
+  .teacherw > .title > p:nth-child(2) {
+    margin: 10px 0;
+    width: 25rem;
+    height: 3px;
+    background-color: rgb(222, 192, 0);
+  }
+  .teacherw > .title > p:last-child {
+    font-size: 1rem;
+  }
+
+  .teacherw > div:last-child {
+    display: flex;
+    justify-content: center;
+  }
+  .teacherw > div:last-child > div {
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+    margin: 10px;
+    background-color: rgb(113, 166, 173);
+  }
+  .english {
+    position: relative;
+    top: 120px;
+    overflow: hidden;
+    text-align: right;
+  }
+  .math {
+    overflow: hidden;
+    text-align: left;
+  }
+  .teacherw img {
+    height: 100%;
+    opacity: 0.8;
+    display: inline;
+  }
+  .visuable {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: rgb(222, 192, 0);
+    font-weight: bold;
+  }
+  .hidden {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: rgb(37, 55, 58);
+    font-weight: bold;
+    line-height: 3rem;
+  }
+  .hidden > span {
+    font-size: 2.5rem;
+    color: rgb(240, 253, 255);
+  }
+  .math > .hidden {
+    left: 60%;
+  }
+
+  /* **************classinfo************************************** */
+  .classinfo {
+    font-family: "GmarketSansMedium";
+    background-color: rgb(108, 125, 158);
+    color: rgb(214, 215, 216);
+    font-size: 1rem;
+  }
+  .classinfow {
+    width: 60%;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .bar {
+    height: 2px;
+    width: 100%;
+    background-color: #1ae5be;
+  }
+  .classinfow > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem 0;
+    color: #fff;
+  }
+  .classinfow > div > div {
+    font-family: "Pretendard-Regular";
+
+    line-height: 2rem;
+    width: 15rem;
+  }
+  .classinfow img {
+    width: 5rem;
+  }
+  /* **************contact********************* */
+  .contactw {
+    font-family: "GmarketSansMedium";
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    align-items: center;
+  }
+  .call > .title {
+    font-size: 2rem;
+  }
+  .callnum {
+    font-size: 3rem;
+    margin: 20px 0;
+    color: #2400da;
+  }
+  .calltime {
+    font-size: 1rem;
+  }
+  .address > .title {
+    font-size: 3rem;
+  }
+  iframe {
+    width: 600px;
+    height: 300px;
+  }
+  /* **************footer******************** */
+  footer {
+    background-color: #353149;
+  }
+  .footerw {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 50px 0;
+  }
+  .footerw > div {
+    margin-left: 30%;
+    font-size: 1.3rem;
+  }
+  .footerw > div > div {
+    padding: 5px 0;
+  }
+  .footerw > div > div:last-child {
+    color: rgb(206, 206, 206);
+  }
+
+  footer span {
+    color: red;
+  }
+}
+/* ****************************************************** */
+/* ************************media 1024******************** */
+/* ******************************************************* */
+@media (max-width: 1024px) {
+  .headerw {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  /* *******main**************************************8 */
+
+  .mainw {
+    width: 90%;
+  }
+
+  /* ************intro******************* */
+  .introw {
+    width: 90%;
+  }
+  /* ************teacher******************************* */
+
+  .teacherw {
+    width: 90%;
+  }
+  .visuable {
+    font-size: 3rem;
+  }
+  .math > .hidden {
+    left: 55%;
+  }
+
+  /* **************classinfo************************************** */
+
+  /* **************contact********************* */
+  .contactw {
+    display: block;
+  }
+  .call {
+    margin-bottom: 50px;
+  }
+  .address > .title {
+    font-size: 2rem;
+  }
+
+  /* **************footer******************** */
+  .footerw {
+    display: block;
+  }
+  .footerw > div {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+}
+
+/* ****************************************************** */
+/* ************************media 768******************** */
+/* ******************************************************* */
+@media (max-width: 768px) {
+  html{
+    font-size:12px;
+  }
+  header{
+    position: relative;
+  }
+  .headerw {
+    width: 95%;
+  }
+  h1>a>img{
+    width:7rem;
+  }
+ 
+  .headerw > nav > img{
+    width:2rem;
+    display: block;
+  }
+  .headerw > nav > ul {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 500px;
+    top:51px;
+    width: 100%;
+  }
+  
+  .headerw > nav > ul > li {
+    padding: 1rem;
+  }
+  /* *******main**************************************8 */
+ .mainw>p{
+  font-size: 5rem;
+ }
+  /* ************intro******************* */
+  .introw {
+    width: 95%;
+  }
+  .introw > ul {
+    display: block;
+  }
+  .introw > ul >li{
+    margin: 20px auto;
+  }
+  .introw > ul img {
+    margin: 0 auto;
+  }
+  
+  .introw > ul p {
+    width: 18rem;
+    margin: 0 auto;
+  }
+
+  /* ************teacher******************************* */
+  .teacherw {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .teacherw > .title {
+    text-align: center;
+  }
+  .teacherw > .title > p {
+    font-size: 3rem;
+  }
+  .teacherw > .title > p:nth-child(2) {
+    margin: 10px auto;
+    width: 90%;
+    height: 2px;
+  }
+  .teacherw > div:last-child {
+    display: block;
+    /* justify-content:space-between; */
+  }
+  .teacherw > div:last-child > div {
+    width: 100vw;
+    height: 50vw;
+    margin: 10px;
+  }
+  .english {
+    overflow: hidden;
+    text-align: right;
+  }
+  .math {
+    overflow: hidden;
+    text-align: left;
+  }
+  .teacherw img {
+    height: 100%;
+    opacity: 0.8;
+    display: inline;
+  }
+  .visuable {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: rgb(222, 192, 0);
+    font-weight: bold;
+  }
+  .hidden {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: rgb(37, 55, 58);
+    font-weight: bold;
+    line-height: 3rem;
+  }
+  .hidden > span {
+    font-size: 2.5rem;
+    color: rgb(240, 253, 255);
+  }
+  .math > .hidden {
+    left: 60%;
+  }
+
+  /* **************classinfo************************************** */
+  .classinfow {
+    width: 80%;
+  }
+  .classinfow > div > div {
+   display: none;
+  }
+
+  /* **************contact********************* */
+  .contactw {
+    width: 80%;
+  }
+
+  iframe {
+    width: 300px;
+    height: 300px;
+  }
+  /* **************footer******************** */
+}
