@@ -1,13 +1,13 @@
 $(document).ready(function(){
     let ulleft = 0;
     $('nav > img').click(function(){
-        if(ulleft > 0){
+        if(ulleft < 0){
             $('nav > ul').stop().animate({left:0},500,function(){
                 ulleft = $('nav > ul').position().left;
             });
             console.log(ulleft);
         } else {
-            $('nav > ul').stop().animate({left:'500px'},500,function(){
+            $('nav > ul').stop().animate({left:'-500px'},500,function(){
                 ulleft = $('nav > ul').position().left;
             });
             console.log(ulleft);
